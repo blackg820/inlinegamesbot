@@ -842,7 +842,7 @@ class Checkers extends Game
         for ($x = 0; $x < $this->max_x; $x++) {
             for ($y = 0; $y < $this->max_y; $y++) {
                 if (strpos($board[$x][$y], 'X') !== false) {
-                    $availableMoves_X[] = $this->possibleMoves($board, $x . $y, false, 'X"');
+                    $availableMoves_X[] = $this->possibleMoves($board, $x . $y, false, 'X');
                 } elseif (strpos($board[$x][$y], 'O') !== false) {
                     $availableMoves_O[] = $this->possibleMoves($board, $x . $y, false, 'O');
                 }
